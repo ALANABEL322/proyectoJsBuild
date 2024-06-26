@@ -1,44 +1,37 @@
 import React from "react";
-import CardCar from "./CardCar";
+import CardRoute from "./CardRoute";
 
 function App() {
-  const cars = [
+  const routes = [
     {
-      carImg:
-        "https://res.cloudinary.com/dkpotpaaf/image/upload/v1719378924/fsjphd804vv0lkq7zezl.webp",
-      model: "Ford focus",
-      capacity: "650kg",
-      plate: "AB-566-MI",
-      branch: "Branch not asigned",
+      startingPoint: "Obelisco de Buenos Aires",
+      branch: "Sucursal Microcentro",
+      vehicle: "MMB-125",
+      endingPoint: "Terminal Retiro",
     },
-    // {
-    //   sucursalImg:
-    //     "https://res.cloudinary.com/dkpotpaaf/image/upload/v1719373683/glmdljna4teroatpbt0o.webp",
-    //   name: "Sucursal andreani",
-    //   country: "Argentina",
-    //   city: "La plata",
-    //   manager: "Encargado: diego garcía",
-    // },
-    // {
-    //   sucursalImg:
-    //     "https://res.cloudinary.com/dkpotpaaf/image/upload/v1719373688/n2pnfei9byktoiecw7uk.png",
-    //   name: "Correo argentino",
-    //   country: "Argentina",
-    //   city: "Rosario",
-    //   manager: "Encargado: juana quevedo",
-    // },
+    {
+      startingPoint: "Puerto Madero",
+      branch: "Sucursal Palermo",
+      vehicle: "OPR-202",
+      endingPoint: "Aeropuerto Ezeiza",
+    },
+    {
+      startingPoint: "Plaza de Mayo",
+      branch: "Sucursal Recoleta",
+      vehicle: "AB-343-CI",
+      endingPoint: "Estadio Monumental",
+    },
   ];
 
   return (
     <div className="flex flex-col items-center">
-      {cars.map((car, index) => (
-        <CardCar
+      {routes.map((route, index) => (
+        <CardRoute
           key={index}
-          carImg={car.carImg}
-          model={car.model}
-          capacity={car.capacity}
-          plate={car.plate}
-          branch={car.branch}
+          startingPoint={route.startingPoint}
+          branch={route.branch}
+          vehicle={route.vehicle}
+          endingPoint={route.endingPoint}
         />
       ))}
     </div>

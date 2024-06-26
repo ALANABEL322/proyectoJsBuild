@@ -1,7 +1,7 @@
 // CardBranch.js
 import React from "react";
 
-const CardBranch = ({ sucursalImg, name, country, city, manager }) => {
+const CardCar = ({ carImg, model, capacity, plate, branch }) => {
   return (
     <a
       href="http://localhost:8069/branch-profile"
@@ -9,22 +9,22 @@ const CardBranch = ({ sucursalImg, name, country, city, manager }) => {
     >
       <div className="card-body flex flex-col md:flex-row items-center">
         <img
-          src={sucursalImg}
-          alt={name}
-          className="w-28 h-20 object-cover mr-0 md:mr-6 mb-4 md:mb-0"
+          src={carImg}
+          alt={model}
+          className="w-32 h-20 rounded-full object-cover mr-0 md:mr-6 mb-4 md:mb-0"
         />
         <div className="flex flex-wrap justify-between w-full">
           <p className="text-lg text-[#00294f] font-bold mb-2 w-full md:w-auto">
-            {name}
+            {model}
           </p>
           <p className="text-lg text-[#00294f] font-bold mb-2 w-full md:w-auto">
-            {city}
+            capacidad {capacity}
           </p>
           <p className="text-lg text-[#00294f] font-bold mb-2 w-full md:w-auto">
-            {country}
+            placa {plate}
           </p>
           <p className="text-lg text-[#00294f] font-bold w-full md:w-auto">
-            {manager}
+            {branch}
           </p>
         </div>
       </div>
@@ -32,4 +32,4 @@ const CardBranch = ({ sucursalImg, name, country, city, manager }) => {
   );
 };
 
-export default CardBranch;
+export default CardCar;

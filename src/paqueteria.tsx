@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ fechaEntrada, id, estado }) => {
   return (
-    <div className="p-5 w-3/4 border rounded-lg shadow-lg transition-colors duration-300 hover:bg-[#0062BC] hover:text-white text-[#00294f]">
+    <div className="p-4 w-3/4 border rounded-lg shadow-lg transition-colors duration-300 hover:bg-[#0062BC] hover:text-white text-[#00294f]">
       <div className="flex justify-around">
         <p className="text-lg font-bold  cursor-pointer">
           Fecha de entrada: {fechaEntrada}

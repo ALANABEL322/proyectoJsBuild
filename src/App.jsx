@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import InventarioCard from "./inventarioCard";
+// import InventarioCard from "./inventarioCard";
 // import Inventario from "./inventario";
 // import Paqueteria from "./paqueteria";
 // import DropdownButton from "./dropdownButton";
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center">
-      <InventarioCard />
+      {/* <InventarioCard /> */}
       {/* <Inventario data={data} /> */}
       {/* <Paqueteria /> */}
       {/* <DropdownButton /> */}

@@ -1,6 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import InventarioCard from "./inventarioCard";
+// import ComponenteAuth from "./componenteAuth";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LoginAdmin from "./loginAdmin";
+// import LoginChofer from "./loginChofer";
+// import InventarioCard from "./inventarioCard";
 // import Inventario from "./inventario";
 // import Paqueteria from "./paqueteria";
 // import DropdownButton from "./dropdownButton";
@@ -23,7 +27,10 @@ function App() {
 
   return (
     <div className="flex flex-col items-center">
-      <InventarioCard />
+      {/* <ComponenteAuth /> */}
+      <LoginAdmin />
+      {/* <LoginChofer /> */}
+      {/* <InventarioCard /> */}
       {/* <Inventario data={data} /> */}
       {/* <Paqueteria /> */}
       {/* <DropdownButton /> */}

@@ -1,5 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+// import ComponenteAuth from "./componenteAuth";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LoginAdmin from "./loginAdmin";
+// import LoginChofer from "./loginChofer";
 // import InventarioCard from "./inventarioCard";
 // import Inventario from "./inventario";
 // import Paqueteria from "./paqueteria";
@@ -23,6 +27,9 @@ function App() {
 
   return (
     <div className="flex flex-col items-center">
+      {/* <ComponenteAuth /> */}
+      <LoginAdmin />
+      {/* <LoginChofer /> */}
       {/* <InventarioCard /> */}
       {/* <Inventario data={data} /> */}
       {/* <Paqueteria /> */}
